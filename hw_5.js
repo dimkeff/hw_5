@@ -97,25 +97,18 @@ console.log (nameUpperCased);
 
 
 //task 11 
-function f(n) {
-  if (n < 2) return 1;
-  return f (n - 2) + f (n - 2);
+function fibonacci(n){
+    let A = 1;
+    let B = 1;
+        for (let i = 3;i <= n; i++) {
+           let C = A + B;
+           A = B;
+           B = C;
+        }
+    return `${n} position among Fibonacci numbers--> ${b}`;
 }
-
-function fl(n){
-  let f1 = 0, f2 = 1, cf = 1;
-  for (let i = 1; i <= n; i++) {
-	cf = f1 + f2;
-	f1 = f2;
-	f2 = cf;
-	}
-
-return cf;
-}
-
-console.log (f(3));
-console.log (f(5));
-console.log (f(13));
-
+console.log(fibonacci(3));
+console.log(fibonacci(5));
+console.log(fibonacci(7));
 
 
