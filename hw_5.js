@@ -105,10 +105,10 @@ function fibonacci(n){
            A = B;
            B = C;
         }
-    return `${n} position among Fibonacci numbers--> ${b}`;
+    return `${n} NUMBERS--> ${b}`;
 }
-console.log(fibonacci(3));
-console.log(fibonacci(5));
-console.log(fibonacci(7));
+console.log(FIBONACCI(3));
+console.log(FIBONACCI(5));
+console.log(FIBONACCI(7));
 
 
