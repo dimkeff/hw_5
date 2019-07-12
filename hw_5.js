@@ -91,10 +91,18 @@ function FirstAndLastToUpperCase(str){
 
 
 //task 9 
- let name = 'dima’;
- let nameUpperCased = name.toUpperCase(); //метод функція
-console.log (nameUpperCased);
+ const toUpperCase = str =>
+  Array.prototype.map.call(str, (el, i) => {
+   const charCode = el.charCodeAt(0);
+   
+   const isLowerCaseChar = charCode >= 97 && charCode <= 122;
+   if(isLowerCaseChar) {
+     return String.fromCharCode(charCode - 32);
+   } 
+   return el;
+  }).join('');
 
+console.log(toUpperCase('Anyone who reads Old and Middle English literary'));
 
 //task 11 
 function fibonacci(n){
